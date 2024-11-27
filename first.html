@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <section>
+            <h2>I am a boy</h2>
+            <!--this is how you comment.-->
+            <p>I study in bachelor 4th year.</p>
+            <!-- img bhitra alt halda yedi kei karan image load huna sakena vaney tyo msg display garxa-->
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+            <!-- anchor is used to link to another page....."Cat Photos" vanera link ko naam banxa blue color ma-->
+            <p>See more <a href="https://freecatphotoapp.com"> Cat Photos</a> in our gallery.</p>
+    
+            <!--target="_blank" halda naya tab/windows ma kholxa-->
+            <p>These are also <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">cats</a></p>
+    
+            <!--image lai nai link banauna-->
+            <a href="https://freecatphotoapp.com">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+            </a>
+        </section> 
+
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+
+            <!--'ul' le unordered list of items dinxa-->
+            <ul>
+                <li>cats nip</li>
+                <li>Laser pointers</li>
+                <li>milk</li>
+            </ul>
+
+            <!--figure with caption ko lagi-->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on plate">
+                <!--em le "love vanni word lai italic/emphasis garyo"-->
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+
+            <!--'ol' le numbered list of items dinxa-->
+            <ol>
+                <li>dogs</li>
+                <li>flea treatment</li>
+                <li>you</li>
+            </ol>
+
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+
+                <!--'strong' le bold garxa certain word-->
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+
+            <Section>
+                <h2>Cat Form</h2>
+
+                <!--The action attribute indicates where form data should be sent.-->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <!--Placeholder text is used to give people a hint about what kind of information to enter into an input.-->
+                    <!--To prevent a user from submitting your form when required information is missing, 
+                    you need to add the required attribute to an input element.-->
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+                    <!--type="radio" halda multiple options tick lagauna lai dinxa-->
+                    <!--label vitra rakhyo vaney "Indoor" lai thichda pani options select hunxa natra mildaina thyo-->
+                    <!--However hamle dubai label ko name same halyam vaney euta option select garda 
+                    arko deselect hunxa natra vaney dubai pani select garna milxa-->
+                    <!--fieldset elements are block-level elements, meaning that they appear on a new line.-->
+
+                    <fieldset>
+                        <!--legend is used for caption-->
+                        <legend>IS your cat an indoor or outdoor?</legend>
+                        <label><input checked type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+                        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                    </fieldset>
+
+                    <!--By default kunai option select garna "checked" word matra halni input element ma-->
+                    <fieldset>
+                        <legend>What's your cat personality?</legend>
+                        <input checked id="loving" type="checkbox" name="personality" value="loving"><label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                    </fieldset>
+                    
+                    <!--The button element is used to create a clickable button.-->
+                    <!-- Add the type attribute with the value submit to the button to make it clear that it is a submit button.-->
+                    <button type="submit">Submit</button>
+                </form>
+            </Section>
+        </section>
+    </main>
+
+    <!--A footer typically contains information about the author of the document, 
+    copyright data, links to terms of use, contact information, and more.-->
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freecodecamp.org</a></p>
+    </footer>
+    </body>
+</html>
